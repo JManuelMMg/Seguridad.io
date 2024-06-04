@@ -1,24 +1,31 @@
 /* Custom styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: medium;
+    margin: auto;
     padding: 0;
     background-color: hsl(0, 0%, 0%); /* changed to a lighter color */
     text-align: justify;
     color: rgb(247, 243, 243);
+    line-height: 1.5;
 }
-div{
+
+div {
     text-align: justify;
-    background:#ffffff18
+    background: #b1b1b122;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
 }
-footer,seccion{
-    background-color:rgb(88, 3, 3) ; /* removerd alpha channel */
+
+footer, seccion {
+    background-color: rgb(88, 3, 3); /* removed alpha channel */
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px 0;
-    box-shadow:rgb(from color red green black)
+    box-shadow: rgb(88, 3, 3);
 }
 
+/* Estilo del header */
 /* Estilo del header */
 header {
     background-color: #620303a4;
@@ -27,8 +34,47 @@ header {
     padding: 20px;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 32px rgb(238, 231, 231);
+    box-shadow: 0 4px 32px rgba(238, 231, 231, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     
+}
+
+/* Estilo del título y el subtítulo */
+header .title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(254, 253, 253, 0.392);
+    animation: rgbTextAnimation 5s infinite;
+}
+
+header .subtitle {
+    font-size: 1.2em;
+    margin: 0;
+    animation: rgbTextAnimation 5s infinite;
+}
+
+nav :before, nav::before {
+    content: '';
+    position: absolute;
+    top: 2;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(0, 222, 251, 0.467), transparent);
+    animation: neon-effect 10s infinite;
+}
+
+@keyframes neon-effect {
+    0% {
+        left: -100%;
+    }
+    50% {
+        left: 100%;
+    }
+    100% {
+        left: -100%;
+    }
 }
 
 /* Apartado para la imagen */
@@ -44,7 +90,7 @@ header .title {
     font-size: 2.5em;
     font-weight: bold;
     margin: 0;
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.563);
+    text-shadow: 2px 2px 4px rgba(154, 154, 154, 0.278);
     animation: rgbTextAnimation 5s infinite;
 }
 
@@ -70,7 +116,7 @@ header .subtitle {
 
 /* Apartado para añadir una imagen de fondo */
 header::before {
-    content: 'black';
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -88,21 +134,22 @@ header::before {
     100% { filter: hue-rotate(360deg); }
 }
 
-
 nav {
-    background: rgba(255, 215, 215, 0.729);
+    background: rgb(255, 255, 255);
     height: 70px;
     box-shadow: rgb(255, 255, 255) 0px 4px 32px;
     display: flex;
+    justify-content: center;
+    align-items: center;
     position: sticky;
     top: 0;
-    overflow: visible;
     z-index: 1000;
+    overflow: visible;
     transition: background 0.3s ease-in-out;
 }
 
 nav div {
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(184, 82, 82, 0.4);
 }
 
 nav a {
@@ -142,53 +189,39 @@ nav a {
 }
 
 nav .indicador {
-	width: 0px;
-	height: 7px;
-	background: #113cfc;
-	position: absolute;
-	bottom: 0;
-	transition: .3s ease-out all;
-	transform: translate(-500px); 
+    width: 0px;
+    height: 7px;
+    background: #113cfc;
+    position: absolute;
+    bottom: 0;
+    transition: .3s ease-out all;
+    transform: translate(-500px); 
 }
 
 .seccion {
-	min-height: 100vh;
-	max-width: 800px;
-	width: 90%;
-	margin: auto;
-
-	padding-top: 120px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
+    min-height: 100vh;
+    max-width: 800px;
+    width: 90%;
+    margin: auto;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .seccion .card {
-	background: #fff;
-	height: 90%;
-	padding: 40px;
-	border-radius: 5px;
-	
+    background: #fff;
+    height: 90%;
+    padding: 40px;
+    border-radius: 5px;
+}
 
 h1 {
-color:#ffffff;/* add styles for h1 element */
+    color: #ffffff; /* add styles for h1 element */
 }
 
-.slide{
-    display: none;
-    padding: 20px;
-    text-align: justify;
-    background-color: #0cadc298;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-}
 
-.slide.active {
-    display: block;
-}
 
 .navigation {
     text-align: center;
@@ -209,22 +242,13 @@ color:#ffffff;/* add styles for h1 element */
     background-color: #fcfcfc;
 }
 
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
 main {
     padding: 20px;
 }
 
 h1, h2, h3 {
-    color: #004b87;
+    color: #f3f6f8;
+    font-style: bold;
 }
 
 .section {
@@ -248,28 +272,6 @@ footer p {
 .container {
     width: 100%;
     margin: 0 auto;
-}
-
-header {
-    background: url('images/security_bg.jpg') no-repeat center center/cover;
-    color: black;
-}
-
-.card {
-    margin: 20px 0;
-}
-
-footer {
-    background-color: #343a40;
-    color: white;
-}
-
-.navbar-brand, .nav-link {
-    font-size: 1.1rem;
-}
-
-.nav-link:hover {
-    color: #00bcd4;
 }
 
 /* Responsive adjustments */
@@ -303,17 +305,11 @@ footer {
     .section {
         margin-bottom: 20px;
     }
-      margin: 0;
-    }
     footer p {
         margin: 5px 0;
     }
     .container {
         width: 100%;
         margin: 0 auto;
-    }
-    header {
-        background: url('images/security_bg.jpg') no-repeat center center/cover;
-        color: rgba(0, 60, 255, 0.668);
     }
 }
