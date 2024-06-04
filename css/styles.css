@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: hsl(0, 0%, 2%); /* changed to a lighter color */
+    background-color: hsl(0, 0%, 0%); /* changed to a lighter color */
     text-align: justify;
     color: rgb(247, 243, 243);
 }
@@ -90,9 +90,9 @@ header::before {
 
 
 nav {
-    background: rgba(0, 30, 255, 0.7);
+    background: rgba(255, 215, 215, 0.729);
     height: 70px;
-    box-shadow: rgba(255, 0, 0, 0.5) 0px 4px 32px;
+    box-shadow: rgb(255, 255, 255) 0px 4px 32px;
     display: flex;
     position: sticky;
     top: 0;
@@ -113,11 +113,11 @@ nav a {
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: #ffffff;
+    color: #000000;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
     font-weight: 500;
     font-size: 1.2em;
-    text-decoration: none;
+    text-decoration: double;
     padding: 0 15px;
 }
 
@@ -180,7 +180,7 @@ color:#ffffff;/* add styles for h1 element */
     display: none;
     padding: 20px;
     text-align: justify;
-    background-color: #ffffff;
+    background-color: #0cadc298;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -200,7 +200,7 @@ color:#ffffff;/* add styles for h1 element */
     margin: 5px;
     cursor: pointer;
     border: none;
-    background-color: #9d120bbb;
+    background-color: #ac170fbb;
     color: #fff;
     border-radius: 5px;
 }
@@ -232,7 +232,7 @@ h1, h2, h3 {
 }
 
 .contact {
-    background-color: #ff0000;
+    background-color: #e30808;
     padding: 20px;
     margin: 20px 0;
 }
