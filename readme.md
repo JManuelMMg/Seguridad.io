@@ -1,11 +1,8 @@
-
+#autor: Juan Manuel Medina Garcia "403", Sistemas Operativos 1; ING. JOSE LUIS GARCIA
 # Seguridad en Internet: Protege tu Vida Digital
 
 ¡Bienvenido a nuestro sitio web dedicado a informarte sobre seguridad en Internet! Aquí encontrarás todo lo que necesitas para proteger tu vida digital y navegar por la red de manera segura. Desde consejos sobre contraseñas sólidas hasta cómo evitar caer en trampas de phishing, estamos aquí para ayudarte a mantenerte protegido en línea.
 
-## Acerca de Nosotros
-
-Somos un equipo comprometido con la seguridad en línea. Nuestro objetivo es educar a las personas sobre las mejores prácticas de seguridad cibernética y proporcionar recursos para protegerse contra amenazas en línea.
 
 ## Contenido Destacado
 
